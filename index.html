@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title> Lista de Tarefas </title>
+</head>
+
+<!-- Estrutura HTML:
+● Crie um arquivo HTML básico com uma lista (<ul>) e um campo de entrada de texto (<input>) com um botão 
+    (<button>) para adicionar tarefas.
+● Adicione uma área para exibir mensagens de erro, caso haja algum problema.
+JavaScript:
+● Crie um objeto chamado tarefa com as propriedades: descricao e concluida.
+● Crie um array chamado listaDeTarefas para armazenar objetos de tarefas.
+Adicionar Tarefa:
+● Adicione um evento de clique ao botão de adicionar.
+● Quando o botão for clicado, pegue o valor do campo de entrada.
+● Crie um objeto de tarefa com a descrição e a marcação inicial como não concluída.
+● Adicione a tarefa ao array listaDeTarefas.
+● Atualize a lista de tarefas na página.
+Atualizar Lista de Tarefas:
+● Crie uma função que percorra o array listaDeTarefas e adicione cada tarefa à lista no HTML.
+● Cada item da lista deve conter a descrição da tarefa e um botão para removê-la.
+● Se uma tarefa estiver marcada como concluída, adicione uma classe CSS para destacar visualmente.
+Remover Tarefa:
+● Adicione um evento de clique aos botões de remoção.
+● Quando um botão for clicado, remova a tarefa correspondente do array listaDeTarefas.
+● Atualize a lista de tarefas na página.
+Marcar Tarefa como Concluída:
+● Adicione um evento de clique aos itens da lista.
+● Quando um item da lista for clicado, alterne o status da tarefa entre concluída e não concluída.
+● Atualize a lista de tarefas na página.
+Limpar Campo de Entrada:
+● Após adicionar uma tarefa, limpe o campo de entrada.
+Validação:
+● Adicione validações para garantir que o campo de entrada não esteja vazio antes de adicionar uma tarefa.
+● Exiba mensagens de erro apropriadas se a validação falhar.
+
+Adicionar a funcionalidade de editar as tarefas existentes.
+Implemente o armazenamento local para que as tarefas permanecam mesmo quando a página for recarregada.  -->
+
+<body>
+
+    <h1> Exercício Lista de Tarefas </h1>
+
+    <h3> Adicionar Tarefa </h3>
+
+    <div>
+
+        <input class="input" id="input" type="text" placeholder="Adicione uma nova tarefa">
+        <input class="input" id="button" type="reset" value="Adicionar">
+
+    </div>
+
+    <ul id="listaTarefas"></ul>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
